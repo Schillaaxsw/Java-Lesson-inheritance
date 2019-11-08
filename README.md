@@ -26,3 +26,15 @@ SuperClasse **ContoBancario**
   - permettere di conoscere il **numero** e il **bilancio** del conto corrente.
   - permettere di depositare e prelevare somme di denaro dal conto corrente --> Il prelievo puo' avvenire solo se il conto corrente presenta un bilancio sufficiente.
   
+## SOTTO-CLASSE ContoEsteso
+
+* Si vuole realizzare una classe **ContoEsteso** che permetta di modellare un conto bancario con un fido.
+* La suddetta classe deve:
+  - Estendere la classe **ContoBancario**
+  - Contenere un valore (**init**) per rappresentare il valore del **fido**.
+  - contenere un costruttore con un parametro che rappresenta il numero del conto corrente. Il **fido** viene inizializzato con il valore 1000.
+  - Contienere un 2ndo contruttore con 2 parametri che rapprasentano rispettivamente il numero del conto corrente e il cilancio del conto. Il **fido** viene inizializzato con il valore 1000.
+  - contenere un 3zo costruttore con 3 parametri che rappresentano rispettivamente il numero del conto corrente, il bilancio e il fido del conto.
+  - permettere di conoscere il valore del **fido** 
+  - permettere di creare un nuovo **fido**
+  - ridefinire il metodo **preleva** della **super-classe** --> è possibile prelevare una determinata somma di denaro da un conto con **fido** solo se questo presenta un bilancio (incluso il **fido**) sufficiente .
