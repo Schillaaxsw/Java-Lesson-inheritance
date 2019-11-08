@@ -12,4 +12,17 @@ Il codice [MyCar.java](https://github.com/Prof-Matteo-Palitto-Peano/Java-Lesson-
 * Tutte le variabili e tutti i metodi della SUPER-CLASSE vengono ereditati dall SOTTO-CLASSE
 * Le varibili PRIVATE della super classe NON sono accessibili direttamente dall SOTTO-CLASSE
 * Le variabili non PRIVATE della SUPER-CLASSE sono accessibili alla SOTTO-CLASSE **solo** se appartengono allo stesso PACKAGE
-* Le variabili PROTECTED sono accessibili direttamente **anche
+* Le variabili PROTECTED sono accessibili direttamente dalle sotto-classi **anche** se SUPER classe appartiene ad un package differente.
+
+
+# ESERCIZIO "CONTO BANCARIO"
+SuperClasse **ContoBancario**
+* Si vuole realizzare un classe **ContoBancario** che permetta di modellare un generico conto bancario.
+* La suddetta classe deve:
+  - Contenere un valore (**String**), per rappresentare il numero (alfanumerico) del conto.
+  - Contenere un valore (**int**), per rappresentare il bilancio del conto corrente.
+  - contenere un costruttore con un parametro che rappresenta il  numero del conto corrente. Il bilancio deve essere inizializzato con il valore 0.
+  - contenere un costruttore con 2 parametri, che rappresentano rispettivamente il numero del conto corrente e il bilancio del conto.
+  - permettere di conoscere il **numero** e il **bilancio** del conto corrente.
+  - permettere di depositare e prelevare somme di denaro dal conto corrente --> Il prelievo puo' avvenire solo se il conto corrente presenta un bilancio sufficiente.
+  
